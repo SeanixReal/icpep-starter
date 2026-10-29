@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { url } from '../lib/site';
+const phases = [
+  { title: 'Get one program running', text: 'Work through setup, then run the three sample programs. Practice opening your folder, saving a file, and reading the terminal output.', exercise: 'Change the greeting, save it, and run the program again. For C and C++, compile again first.', label: 'Run the verification programs', href: url('guides/verify/') },
+  { title: 'Work with values and decisions', text: 'Learn variables, basic data types, input and output, arithmetic, and if/else. Pick the language your current subject uses so practice supports your coursework.', exercise: 'Build a unit converter. Test a normal value, zero, and an input you did not expect.', label: 'Open the Python tutorial', href: 'https://docs.python.org/3/tutorial/' },
+  { title: 'Repeat, organize, and explain', text: 'Practice loops, functions, and small collections. Name variables clearly and make each function do one understandable job.', exercise: 'Write a program that summarizes a small list of sample scores. Use made-up values, then explain each step aloud.', label: 'Read the C++ language introduction', href: 'https://learn.microsoft.com/en-us/cpp/cpp/welcome-back-to-cpp-modern-cpp' },
+  { title: 'Get comfortable with debugging', text: 'Read the first error message before changing code. Reproduce the problem, inspect values, and change one thing at a time. Use small examples to test your guess.', exercise: 'Introduce one small mistake, predict the result, and write down how you found and fixed it.', label: 'Learn VS Code debugging basics', href: 'https://code.visualstudio.com/docs/debugtest/debugging' },
+  { title: 'Make something small and keep its history', text: 'Combine what you learned into a tiny command-line project: a study timer, unit converter, or practice quiz. Add a README explaining how to run it.', exercise: 'Make three meaningful Git commits. Ask a friend to follow your README, then improve the step where they pause.', label: 'Revisit Git & GitHub', href: url('guides/git-github/') },
+];
+---
+<Base title="Learning roadmap" active="roadmap">
+  <header class="page-heading"><h1>One small program<br />at a time.</h1><p>You do not need to learn everything at once. Use this proposed roadmap alongside your classes, and let a working program be your next milestone.</p></header>
+  <ol class="roadmap-list">{phases.map(phase => <li><div><h2>{phase.title}</h2><p>{phase.text}</p><p class="exercise"><strong>Try this:</strong> {phase.exercise}</p><a class="text-link" href={phase.href}>{phase.label}<Icon name="arrow" size={14} /></a></div></li>)}</ol>
+  <div class="inline-notice">This is a beginner practice path, not a replacement for your syllabus or a faculty-approved curriculum. Follow your instructor's language, topics, and assessment requirements.</div>
+</Base>

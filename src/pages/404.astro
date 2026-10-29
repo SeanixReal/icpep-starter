@@ -1,0 +1,6 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { url } from '../lib/site';
+---
+<Base title="Page not found"><header class="page-heading"><h1>This page took<br />a wrong turn.</h1><p>The guide may have moved, or the address may be incomplete. Your setup path is a good place to start again.</p></header><a class="button" href={url()}>Back to the toolkit <Icon name="arrow" size={16} /></a><p style="margin-top: 24px; font-size: 12px"><a href={url('troubleshooting/')}>Looking for help with a setup error?</a></p></Base>

@@ -1,0 +1,34 @@
+---
+import Icon from './Icon.astro';
+import { url, site, sections } from '../lib/site';
+const { active = '' } = Astro.props;
+const resources = [
+  { id: 'troubleshooting', title: 'Troubleshooting', icon: 'help' },
+  { id: 'roadmap', title: 'Learning roadmap', icon: 'book' },
+  { id: 'downloads', title: 'Downloads', icon: 'download' },
+];
+---
+<aside class="sidebar" id="site-navigation">
+  <a class="chapter-brand" href={url()} aria-label="CpE Starter Toolkit home">
+    <img src={url('brand/icpep-logo.jpg')} alt="ICpEP.SE CIT-U chapter logo" width="46" height="46" />
+    <span>ICpEP.SE<strong>CIT-U Chapter</strong></span>
+  </a>
+  <button class="nav-close icon-button" type="button" aria-label="Close navigation"><Icon name="close" /></button>
+  <div class="sidebar-title">Your first line<br />starts here.</div>
+  <nav aria-label="Main navigation">
+    <a href={url()} class:list={['nav-link', { active: active === 'home' }]} aria-current={active === 'home' ? 'page' : undefined}><Icon name="book" size={17} />Overview</a>
+    {sections.map(section => <div class="nav-group">
+      <p>{section.label}</p>
+      {section.items.map(item => <a href={url(`guides/${item.id}/`)} class:list={['nav-link', { active: active === item.id }]} aria-current={active === item.id ? 'page' : undefined}>
+        {'number' in item && <span class="nav-number" data-nav-guide={item.id}>{item.number}</span>}
+        <span>{item.title}</span>
+      </a>)}
+    </div>)}
+    <div class="nav-group"><p>When you need it</p>{resources.map(item => <a href={url(`${item.id}/`)} class:list={['nav-link', { active: active === item.id }]} aria-current={active === item.id ? 'page' : undefined}><Icon name={item.icon} size={17} />{item.title}</a>)}</div>
+  </nav>
+  <div class="sidebar-bottom">
+    <a class="contribute-link" href={`${site.repository}/blob/main/CONTRIBUTING.md`}><Icon name="github" size={19} /><span>Built by your community<strong>Help improve the toolkit <span aria-hidden="true">↗</span></strong></span></a>
+    <span class="sidebar-version">V1 draft · AY 2026–2027</span>
+  </div>
+</aside>
+<button class="nav-backdrop" aria-label="Close navigation" tabindex="-1" hidden></button>

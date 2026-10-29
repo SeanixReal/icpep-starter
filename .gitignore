@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.astro/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.log
+tmp/
+output/
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/build/
+.impeccable/*.local.json
+public/downloads/starter-guide.md
+public/downloads/verification-programs.zip

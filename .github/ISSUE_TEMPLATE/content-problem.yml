@@ -1,0 +1,36 @@
+name: Guide or setup problem
+description: Tell us where a beginner might get stuck.
+title: "[Guide]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for helping. Issues are public: remove student IDs, credentials, personal file paths, and unrelated information from screenshots."
+  - type: input
+    id: guide
+    attributes:
+      label: Guide and exact step
+      placeholder: "Python guide → Install the proposed runtime"
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Device, operating system, terminal, and tool versions
+      placeholder: "Windows 11 x64, PowerShell, Python version…"
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+      description: Include the exact command and first error message, with private values removed.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: A possible clearer explanation or fix

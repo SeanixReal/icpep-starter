@@ -1,0 +1,52 @@
+---
+import '@fontsource/manrope/latin-400.css';
+import '@fontsource/manrope/latin-500.css';
+import '@fontsource/manrope/latin-600.css';
+import '@fontsource/manrope/latin-700.css';
+import '@fontsource/manrope/latin-800.css';
+import '@fontsource/unbounded/latin-500.css';
+import '@fontsource/unbounded/latin-600.css';
+import '../styles/global.css';
+import Sidebar from '../components/Sidebar.astro';
+import Icon from '../components/Icon.astro';
+import { url, site } from '../lib/site';
+interface Props { title: string; description?: string; active?: string; wide?: boolean }
+const { title, description = 'Set up your programming environment, run your first programs, and find your footing in Computer Engineering.', active = '', wide = false } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#004aad" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>{title === 'Overview' ? site.name : `${title} · ${site.name}`}</title>
+    <link rel="icon" type="image/jpeg" href={url('brand/icpep-logo.jpg')} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <Sidebar active={active} />
+    <div class="page-shell">
+      <header class="topbar">
+        <button class="nav-toggle icon-button" type="button" aria-label="Open navigation" aria-controls="site-navigation" aria-expanded="false" hidden><Icon name="menu" /></button>
+        <a class="toolkit-wordmark" href={url()}>CpE <strong>Starter Toolkit<span class="wordmark-dot">.</span></strong></a>
+        <button class="search-trigger" type="button" aria-label="Search the toolkit" data-open-search hidden><Icon name="search" size={17} /><span>Find a guide…</span><kbd>/</kbd></button>
+        <a class="repo-link" href={site.repository} aria-label="View source on GitHub"><Icon name="github" /><span>GitHub</span></a>
+      </header>
+      <div class="draft-banner"><span class="status-dot"></span><span><strong>V1 review draft.</strong> Tool choices and instructions are proposed. <a href={url('about/')}>See what needs review <span aria-hidden="true">↗</span></a></span></div>
+      <main id="main" class:list={['main-content', { wide }]} tabindex="-1"><slot /></main>
+      <footer class="site-footer"><span>{site.chapter} <span class="footer-divider">/</span> Research & Development Committee</span><a href={url('about/')}>About this draft <Icon name="arrow" size={14} /></a></footer>
+    </div>
+    <dialog class="search-dialog" aria-labelledby="search-title" data-search-url={url('search.json')}>
+      <div class="search-dialog-head"><h2 id="search-title">Find your next step</h2><button class="icon-button" type="button" data-close-search aria-label="Close search"><Icon name="close" /></button></div>
+      <label class="search-input-label" for="guide-search">Search guides, commands, and common problems</label>
+      <div class="search-field"><Icon name="search" /><input id="guide-search" type="search" placeholder="Try “Python” or “PATH”…" autocomplete="off" /></div>
+      <p class="search-status" role="status">Type a word to search the toolkit.</p>
+      <ul class="search-results" aria-label="Search results"></ul>
+      <p class="search-hint"><kbd>Esc</kbd> to close <span>Guides are available in the navigation, too.</span></p>
+    </dialog>
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script>import '../scripts/toolkit';</script>
+  </body>
+</html>

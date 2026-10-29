@@ -1,0 +1,428 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-29T15:35:13.037Z",
+  "title": "Design System: CpE Starter Toolkit",
+  "extensions": {
+    "colorMeta": {
+      "blue": {
+        "role": "primary",
+        "displayName": "Chapter Cobalt",
+        "tonalRamp": [
+          "oklch(15.00% 0.17091 259.21)",
+          "oklch(26.43% 0.17091 259.21)",
+          "oklch(37.86% 0.17091 259.21)",
+          "oklch(49.29% 0.17091 259.21)",
+          "oklch(60.71% 0.17091 259.21)",
+          "oklch(72.14% 0.17091 259.21)",
+          "oklch(83.57% 0.17091 259.21)",
+          "oklch(95.00% 0.17091 259.21)"
+        ]
+      },
+      "blue-hover": {
+        "role": "primary",
+        "displayName": "Deep Cobalt",
+        "tonalRamp": [
+          "oklch(15.00% 0.14289 258.75)",
+          "oklch(26.43% 0.14289 258.75)",
+          "oklch(37.86% 0.14289 258.75)",
+          "oklch(49.29% 0.14289 258.75)",
+          "oklch(60.71% 0.14289 258.75)",
+          "oklch(72.14% 0.14289 258.75)",
+          "oklch(83.57% 0.14289 258.75)",
+          "oklch(95.00% 0.14289 258.75)"
+        ]
+      },
+      "sky": {
+        "role": "primary",
+        "displayName": "Sky",
+        "tonalRamp": [
+          "oklch(15.00% 0.14986 239.59)",
+          "oklch(26.43% 0.14986 239.59)",
+          "oklch(37.86% 0.14986 239.59)",
+          "oklch(49.29% 0.14986 239.59)",
+          "oklch(60.71% 0.14986 239.59)",
+          "oklch(72.14% 0.14986 239.59)",
+          "oklch(83.57% 0.14986 239.59)",
+          "oklch(95.00% 0.14986 239.59)"
+        ]
+      },
+      "navy": {
+        "role": "primary",
+        "displayName": "Terminal Navy",
+        "tonalRamp": [
+          "oklch(15.00% 0.08202 256.69)",
+          "oklch(26.43% 0.08202 256.69)",
+          "oklch(37.86% 0.08202 256.69)",
+          "oklch(49.29% 0.08202 256.69)",
+          "oklch(60.71% 0.08202 256.69)",
+          "oklch(72.14% 0.08202 256.69)",
+          "oklch(83.57% 0.08202 256.69)",
+          "oklch(95.00% 0.08202 256.69)"
+        ]
+      },
+      "rail": {
+        "role": "primary",
+        "displayName": "Chapter Rail",
+        "tonalRamp": [
+          "oklch(15.00% 0.12431 258.90)",
+          "oklch(26.43% 0.12431 258.90)",
+          "oklch(37.86% 0.12431 258.90)",
+          "oklch(49.29% 0.12431 258.90)",
+          "oklch(60.71% 0.12431 258.90)",
+          "oklch(72.14% 0.12431 258.90)",
+          "oklch(83.57% 0.12431 258.90)",
+          "oklch(95.00% 0.12431 258.90)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.06047 255.98)",
+          "oklch(26.43% 0.06047 255.98)",
+          "oklch(37.86% 0.06047 255.98)",
+          "oklch(49.29% 0.06047 255.98)",
+          "oklch(60.71% 0.06047 255.98)",
+          "oklch(72.14% 0.06047 255.98)",
+          "oklch(83.57% 0.06047 255.98)",
+          "oklch(95.00% 0.06047 255.98)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted",
+        "tonalRamp": [
+          "oklch(15.00% 0.04154 253.67)",
+          "oklch(26.43% 0.04154 253.67)",
+          "oklch(37.86% 0.04154 253.67)",
+          "oklch(49.29% 0.04154 253.67)",
+          "oklch(60.71% 0.04154 253.67)",
+          "oklch(72.14% 0.04154 253.67)",
+          "oklch(83.57% 0.04154 253.67)",
+          "oklch(95.00% 0.04154 253.67)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 0.00)",
+          "oklch(26.43% 0.00000 0.00)",
+          "oklch(37.86% 0.00000 0.00)",
+          "oklch(49.29% 0.00000 0.00)",
+          "oklch(60.71% 0.00000 0.00)",
+          "oklch(72.14% 0.00000 0.00)",
+          "oklch(83.57% 0.00000 0.00)",
+          "oklch(95.00% 0.00000 0.00)"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Ground",
+        "tonalRamp": [
+          "oklch(15.00% 0.00453 258.32)",
+          "oklch(26.43% 0.00453 258.32)",
+          "oklch(37.86% 0.00453 258.32)",
+          "oklch(49.29% 0.00453 258.32)",
+          "oklch(60.71% 0.00453 258.32)",
+          "oklch(72.14% 0.00453 258.32)",
+          "oklch(83.57% 0.00453 258.32)",
+          "oklch(95.00% 0.00453 258.32)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Line",
+        "tonalRamp": [
+          "oklch(15.00% 0.01612 253.91)",
+          "oklch(26.43% 0.01612 253.91)",
+          "oklch(37.86% 0.01612 253.91)",
+          "oklch(49.29% 0.01612 253.91)",
+          "oklch(60.71% 0.01612 253.91)",
+          "oklch(72.14% 0.01612 253.91)",
+          "oklch(83.57% 0.01612 253.91)",
+          "oklch(95.00% 0.01612 253.91)"
+        ]
+      },
+      "soft-blue": {
+        "role": "primary",
+        "displayName": "Soft Blue",
+        "tonalRamp": [
+          "oklch(15.00% 0.01590 253.90)",
+          "oklch(26.43% 0.01590 253.90)",
+          "oklch(37.86% 0.01590 253.90)",
+          "oklch(49.29% 0.01590 253.90)",
+          "oklch(60.71% 0.01590 253.90)",
+          "oklch(72.14% 0.01590 253.90)",
+          "oklch(83.57% 0.01590 253.90)",
+          "oklch(95.00% 0.01590 253.90)"
+        ]
+      },
+      "note-ink": {
+        "role": "neutral",
+        "displayName": "Note Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.06743 248.84)",
+          "oklch(26.43% 0.06743 248.84)",
+          "oklch(37.86% 0.06743 248.84)",
+          "oklch(49.29% 0.06743 248.84)",
+          "oklch(60.71% 0.06743 248.84)",
+          "oklch(72.14% 0.06743 248.84)",
+          "oklch(83.57% 0.06743 248.84)",
+          "oklch(95.00% 0.06743 248.84)"
+        ]
+      },
+      "green": {
+        "role": "secondary",
+        "displayName": "Completion Green",
+        "tonalRamp": [
+          "oklch(15.00% 0.09351 159.76)",
+          "oklch(26.43% 0.09351 159.76)",
+          "oklch(37.86% 0.09351 159.76)",
+          "oklch(49.29% 0.09351 159.76)",
+          "oklch(60.71% 0.09351 159.76)",
+          "oklch(72.14% 0.09351 159.76)",
+          "oklch(83.57% 0.09351 159.76)",
+          "oklch(95.00% 0.09351 159.76)"
+        ]
+      },
+      "amber": {
+        "role": "tertiary",
+        "displayName": "Review Amber",
+        "tonalRamp": [
+          "oklch(15.00% 0.08872 72.58)",
+          "oklch(26.43% 0.08872 72.58)",
+          "oklch(37.86% 0.08872 72.58)",
+          "oklch(49.29% 0.08872 72.58)",
+          "oklch(60.71% 0.08872 72.58)",
+          "oklch(72.14% 0.08872 72.58)",
+          "oklch(83.57% 0.08872 72.58)",
+          "oklch(95.00% 0.08872 72.58)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Welcome Display",
+        "purpose": "Two-line overview identity; responsive sizing follows the built media queries."
+      },
+      "headline": {
+        "displayName": "Page Headline",
+        "purpose": "Guide and secondary-page identities."
+      },
+      "section": {
+        "displayName": "Section Heading",
+        "purpose": "Recurring overview and article section headings."
+      },
+      "title": {
+        "displayName": "Guide Subheading",
+        "purpose": "Third-level article headings."
+      },
+      "body": {
+        "displayName": "Site Body",
+        "purpose": "General interface and introductory text."
+      },
+      "reading": {
+        "displayName": "Guide Reading",
+        "purpose": "Long-form articles with a 70ch measure."
+      },
+      "label": {
+        "displayName": "Action Label",
+        "purpose": "Extra-bold primary and secondary button text."
+      },
+      "navigation": {
+        "displayName": "Rail Navigation",
+        "purpose": "Compact navigation links; the active page uses extra-bold weight."
+      },
+      "code": {
+        "displayName": "Guide Code",
+        "purpose": "Monospace guide code blocks; the source config supplies GitHub Dark syntax colors."
+      }
+    },
+    "shadows": [
+      {
+        "name": "program-example",
+        "value": "0 12px 30px -16px #142c4d70",
+        "purpose": "Soft depth under the navy program example."
+      },
+      {
+        "name": "search-dialog",
+        "value": "0 24px 80px -16px #001b4660",
+        "purpose": "Separate native modal search from its backdrop."
+      },
+      {
+        "name": "toast",
+        "value": "0 5px 20px -8px #001b4660",
+        "purpose": "Brief feedback above the reading page."
+      }
+    ],
+    "motion": [
+      {
+        "name": "navigation-duration",
+        "value": "220ms",
+        "purpose": "Mobile drawer transform; disabled by reduced-motion preference."
+      },
+      {
+        "name": "navigation-easing",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Mobile drawer transform easing."
+      },
+      {
+        "name": "progress-duration",
+        "value": "300ms",
+        "purpose": "Native WebKit progress-fill width; disabled by reduced-motion preference."
+      },
+      {
+        "name": "progress-easing",
+        "value": "ease-out",
+        "purpose": "Native WebKit progress-fill easing."
+      },
+      {
+        "name": "anchor-scroll",
+        "value": "smooth",
+        "purpose": "Default document anchor scrolling; automatic for reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-min",
+        "value": "1700px"
+      },
+      {
+        "name": "compact-max",
+        "value": "1190px"
+      },
+      {
+        "name": "stacked-max",
+        "value": "960px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "760px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary setup, guide-completion, or print action.",
+      "html": "<button class=\"ds-button\" type=\"button\">Start your setup <svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\"></path></svg></button>",
+      "css": ".ds-button{display:inline-flex;min-height:43px;align-items:center;justify-content:center;gap:14px;padding:10px 18px;border:1px solid transparent;border-radius:6px;background:var(--blue,#004aad);color:var(--paper,#ffffff);font-family:var(--body,Manrope,sans-serif);font-size:12px;font-weight:800;line-height:1.5;text-decoration:none;cursor:pointer}.ds-button:hover{background:var(--blue-hover,#003b8a)}.ds-button:focus-visible{outline:3px solid var(--sky,#38b6ff);outline-offset:4px}.ds-button:disabled{cursor:not-allowed;opacity:.65}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outlined alternative to the main cobalt action.",
+      "html": "<button class=\"ds-button ds-secondary\" type=\"button\">Get the guide</button>",
+      "css": ".ds-button{display:inline-flex;min-height:43px;align-items:center;justify-content:center;gap:14px;padding:10px 18px;border:1px solid transparent;border-radius:6px;background:var(--blue,#004aad);color:var(--paper,#ffffff);font-family:var(--body,Manrope,sans-serif);font-size:12px;font-weight:800;line-height:1.5;text-decoration:none;cursor:pointer}.ds-button:hover{background:var(--blue-hover,#003b8a)}.ds-button:focus-visible{outline:3px solid var(--sky,#38b6ff);outline-offset:4px}.ds-button:disabled{cursor:not-allowed;opacity:.65}.ds-secondary{background:transparent;color:var(--ink,#152b48);border-color:var(--line,#dce4ee)}.ds-secondary:hover{background:var(--soft-blue,#edf5ff)}"
+    },
+    {
+      "name": "Icon Button",
+      "kind": "button",
+      "refersTo": "icon-button",
+      "description": "Labeled compact control for navigation or modal dismissal.",
+      "html": "<button class=\"ds-icon-button\" type=\"button\" aria-label=\"Close search\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m6 6 12 12M6 18 18 6\"></path></svg></button>",
+      "css": ".ds-icon-button{border:0;background:transparent;color:var(--ink,#152b48);min-width:40px;min-height:40px;display:inline-flex;align-items:center;justify-content:center;border-radius:6px;cursor:pointer}.ds-icon-button:hover{background:var(--soft-blue,#edf5ff)}.ds-icon-button:focus-visible{outline:3px solid var(--sky,#38b6ff);outline-offset:4px}"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "search-field",
+      "description": "Labeled search field inside the toolkit search dialog.",
+      "html": "<label class=\"ds-search-label\" for=\"ds-guide-search\">Search guides, commands, and common problems</label><div class=\"ds-search-field\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m21 21-5-5m2-6a8 8 0 1 1-16 0 8 8 0 0 1 16 0\"></path></svg><input id=\"ds-guide-search\" type=\"search\" placeholder=\"Try “Python” or “PATH”…\" autocomplete=\"off\"></div>",
+      "css": ".ds-search-label{display:block;font-family:var(--body,Manrope,sans-serif);font-size:11px;color:var(--muted,#53657b);margin:18px 0 9px}.ds-search-field{display:flex;gap:10px;align-items:center;border:1px solid #a3b6ce;border-radius:6px;padding:0 13px;color:var(--ink,#152b48)}.ds-search-field input{min-width:0;width:100%;border:0;padding:12px 0;outline:0;background:transparent;color:var(--ink,#152b48);font-family:var(--body,Manrope,sans-serif);font-size:14px;caret-color:var(--blue,#004aad)}.ds-search-field:focus-within{outline:3px solid #38b6ff60;border-color:var(--blue,#004aad)}.ds-search-field input::placeholder{color:var(--muted,#53657b)}"
+    },
+    {
+      "name": "Chapter Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Rail links with a white active-page state.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Toolkit navigation\"><a class=\"ds-nav-link ds-active\" href=\"#overview\" aria-current=\"page\"><svg width=\"17\" height=\"17\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 5v16M12 5C9 2 5 2 2 4v16c4-2 7-1 10 1 3-2 6-3 10-1V4c-3-2-7-2-10 1\"></path></svg>Overview</a><a class=\"ds-nav-link\" href=\"#readiness\"><span class=\"ds-nav-number\">01</span>Before you begin</a><a class=\"ds-nav-link\" href=\"#vscode\"><span class=\"ds-nav-number\">02</span>Install VS Code</a></nav>",
+      "css": ".ds-nav{background:var(--rail,#073679);padding:14px;width:224px;font-family:var(--body,Manrope,sans-serif)}.ds-nav-link{display:flex;align-items:center;gap:11px;min-height:40px;padding:9px 12px;color:#d4e2f7;text-decoration:none;font-size:13px;border-radius:6px;line-height:1.5}.ds-nav-link:hover{background:#124586;color:var(--paper,#ffffff)}.ds-nav-link.ds-active{background:var(--paper,#ffffff);color:var(--rail,#073679);font-weight:800}.ds-nav-number{font-size:10px;font-weight:700;min-width:17px;font-variant-numeric:tabular-nums}.ds-nav-link:focus-visible{outline:3px solid var(--sky,#38b6ff);outline-offset:4px}"
+    },
+    {
+      "name": "Proposed Guide Tag",
+      "kind": "chip",
+      "refersTo": "draft-label",
+      "description": "Non-interactive review-state tag used beside guide metadata.",
+      "html": "<span class=\"ds-draft-label\">Proposed guide</span>",
+      "css": ".ds-draft-label{padding:2px 8px;border-radius:4px;color:var(--amber,#775015);background:#fff3dc;font-family:var(--body,Manrope,sans-serif);font-size:10px;font-weight:800;line-height:1.7}"
+    },
+    {
+      "name": "Progress Note",
+      "kind": "card",
+      "refersTo": "progress-note",
+      "description": "Optional on-device setup reminder with a native progress meter.",
+      "html": "<section class=\"ds-progress-note\"><h3>A little progress, every step.</h3><p class=\"ds-progress-count\">2 of 6 guides marked complete</p><progress class=\"ds-progress\" max=\"6\" value=\"2\" aria-label=\"Guides marked complete\"></progress><p class=\"ds-progress-copy\">Saved only in this browser. Your checkmarks are a personal reminder, not a setup test.</p><button class=\"ds-reset\" type=\"button\">Reset my progress</button></section>",
+      "css": ".ds-progress-note{background:var(--soft-blue,#edf5ff);color:var(--ink,#152b48);padding:21px;border-radius:12px;max-width:220px;font-family:var(--body,Manrope,sans-serif)}.ds-progress-note h3{font-size:13px;font-weight:800;line-height:1.35;margin:0}.ds-progress-count{margin:16px 0 7px;font-size:10px;color:var(--note-ink,#365879);line-height:1.7}.ds-progress{display:block;width:100%;height:5px;border:none;background:#d1e1f4;accent-color:var(--blue,#004aad);border-radius:5px;overflow:hidden}.ds-progress::-webkit-progress-bar{background:#d1e1f4}.ds-progress::-webkit-progress-value{background:var(--blue,#004aad);transition:width .3s ease-out}.ds-progress-copy{color:var(--note-ink,#365879);font-size:11px;line-height:1.8;margin:13px 0 0}.ds-reset{background:none;border:0;padding:0;color:var(--note-ink,#365879);font-family:var(--body,Manrope,sans-serif);font-size:9px;text-decoration:underline;text-underline-offset:3px;margin-top:12px;cursor:pointer}.ds-reset:focus-visible{outline:3px solid var(--sky,#38b6ff);outline-offset:4px}@media(prefers-reduced-motion:reduce){.ds-progress::-webkit-progress-value{transition:none}}"
+    },
+    {
+      "name": "Setup Path Row",
+      "kind": "custom",
+      "refersTo": "path-row",
+      "description": "Ruled guide link in the ordered setup sequence.",
+      "html": "<a class=\"ds-path-row\" href=\"#readiness\"><span class=\"ds-path-index\">01</span><span><span class=\"ds-path-title\">Before you begin</span><span class=\"ds-path-description\">Check your device and prepare a place to practice.</span></span><span class=\"ds-path-time\">10 min</span><svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14m-6-6 6 6-6 6\"></path></svg></a>",
+      "css": ".ds-path-row{display:grid;grid-template-columns:35px 1fr auto 16px;gap:15px;align-items:center;padding:20px 0;border-block:1px solid var(--line,#dce4ee);text-decoration:none;color:var(--ink,#152b48);font-family:var(--body,Manrope,sans-serif);line-height:1.7}.ds-path-row:hover .ds-path-title{color:var(--blue,#004aad)}.ds-path-index{display:flex;width:33px;height:33px;justify-content:center;align-items:center;border:1px solid #c7d5e6;border-radius:50%;color:var(--blue,#004aad);font-weight:800;font-size:10px;font-variant-numeric:tabular-nums}.ds-path-title{font-size:14px;font-weight:800;display:block}.ds-path-description{display:block;color:var(--muted,#53657b);font-size:12px;line-height:1.7;margin-top:4px}.ds-path-time{color:var(--muted,#53657b);font-size:9px;white-space:nowrap}.ds-path-row.ds-complete .ds-path-index{background:#e6f5ed;border-color:#afd4c0;color:var(--green,#126341)}.ds-path-row.ds-complete .ds-path-time{color:var(--green,#126341)}.ds-path-row:focus-visible{outline:3px solid var(--sky,#38b6ff);outline-offset:4px}@media(max-width:760px){.ds-path-row{grid-template-columns:31px 1fr 16px;gap:13px;padding:19px 0}.ds-path-index{width:30px;height:30px}.ds-path-time{display:none}}"
+    },
+    {
+      "name": "Guide Callout",
+      "kind": "card",
+      "refersTo": "guide-callout",
+      "description": "Flat instructional note within guide prose.",
+      "html": "<blockquote class=\"ds-callout\"><p>Use the terminal named in the guide, then compare your program's output with the expected result.</p><p>Source review is not faculty approval or a device test.</p></blockquote>",
+      "css": ".ds-callout{margin:0;padding:18px 20px;background:var(--soft-blue,#edf5ff);color:var(--note-ink,#365879);border:1px solid #d3e2f5;border-radius:8px;font-family:var(--body,Manrope,sans-serif);font-size:12px;line-height:1.9}.ds-callout p{margin:0}.ds-callout p+p{margin-top:12px}"
+    },
+    {
+      "name": "Readiness Check",
+      "kind": "input",
+      "refersTo": "readiness-check",
+      "description": "Native, optional readiness checkbox with an explanation.",
+      "html": "<div class=\"ds-check\"><label for=\"ds-ready\"><input id=\"ds-ready\" type=\"checkbox\"><span><strong>I have permission to install software.</strong><span>Check with the device owner or school IT.</span></span></label></div>",
+      "css": ".ds-check{padding:13px 0;border-bottom:1px solid var(--line,#dce4ee);color:var(--ink,#152b48);font-family:var(--body,Manrope,sans-serif);line-height:1.9}.ds-check label{display:flex;align-items:start;gap:12px;cursor:pointer}.ds-check input{width:17px;height:17px;margin-top:5px;flex-shrink:0;accent-color:var(--blue,#004aad)}.ds-check strong{display:block;font-size:13px;font-weight:800}.ds-check span span{display:block;font-size:11px;color:var(--muted,#53657b);margin-top:4px}.ds-check input:focus-visible{outline:3px solid var(--sky,#38b6ff);outline-offset:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Engineering Field Notebook",
+    "overview": "The Engineering Field Notebook places a clear, white reading surface beside the chapter's navy navigation rail. Cobalt guides action and orientation; thin rules and numbered rows make the learning sequence easy to scan. The tone is practical, calm, and friendly to a beginner.\n\nUnbounded gives page identities the chapter's distinctive voice, while Manrope carries explanations and controls. The supplied chapter logo and administration banner remain intact. A small terminal example supports the instructional material; the rest of the interface uses familiar documentation patterns.",
+    "keyCharacteristics": [
+      "White reading paper, a persistent blue chapter rail, and restrained cobalt actions.",
+      "Ruled sequences and generous reading margins rather than repeated elevated cards.",
+      "Readable guide prose with an on-page contents margin and visible official references.",
+      "Optional browser enhancements with a complete reading and navigation baseline."
+    ],
+    "rules": [
+      {
+        "name": "The Reading Paper Rule",
+        "body": "The reading shell uses Paper. Ground serves the outer canvas and compact search trigger.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Font Rule",
+        "body": "Unbounded carries page identities and the chapter statement; Manrope carries reading and controls. Commands use the local monospace stack.",
+        "section": "typography"
+      },
+      {
+        "name": "The Working Surface Rule",
+        "body": "Ruled lists and reading content stay flat. Shadows distinguish the program example, modal search, and transient feedback.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve the supplied chapter marks and use the existing chapter palette.",
+      "Do keep the reading shell white and distinguish secondary notes with Soft Blue.",
+      "Do retain the guide reading measure, generous line height, and visible source links.",
+      "Do provide a visible keyboard focus treatment and usable navigation without JavaScript.",
+      "Do use the existing inline SVG path language for interface icons.",
+      "Do retain the print view's readable code, external URLs, and explicit review-draft status."
+    ],
+    "donts": [
+      "Don't redraw, recolor, crop, or distort the supplied institutional marks.",
+      "Don't present personal checkmarks or the proposed-guide tag as verified installation or faculty approval.",
+      "Don't make reading, guide links, troubleshooting disclosures, or printing depend on JavaScript.",
+      "Don't assume HK Modular is available; its font files were not supplied."
+    ]
+  }
+}

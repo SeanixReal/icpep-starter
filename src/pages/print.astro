@@ -1,0 +1,14 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { site } from '../lib/site';
+const guides = (await getCollection('guides')).sort((a, b) => a.data.order - b.data.order);
+const rendered = await Promise.all(guides.map(async guide => ({ guide, ...await render(guide) })));
+---
+<Base title="Printable setup guide">
+  <header class="page-heading"><h1>CpE Starter Toolkit</h1><p>Complete setup guide · Version {site.version} · {site.reviewed}</p><p><strong>V1 review draft.</strong> All tool recommendations are proposed. Faculty approval and Windows pilot testing are pending.</p><div class="print-toolbar"><button class="button" type="button" data-print hidden><Icon name="print" size={16} />Print / Save as PDF</button></div></header>
+  <div class="prose"><h2>Readiness checklist</h2><ul><li>Identify your device architecture and Windows version.</li><li>Confirm permission and administrator access where required.</li><li>Check available storage, internet access, and official tool requirements.</li><li>Back up important coursework.</li><li>Create a practice folder and show filename extensions.</li></ul><p>The site is a reading aid. Personal checkmarks do not verify an installation. Use the actual programs and compare their output.</p></div>
+  {rendered.map(({ guide, Content }) => <section class="print-guide-section"><h2>{guide.data.order}. {guide.data.title}</h2><article class="prose"><Content /><h3>Official references</h3><ul>{guide.data.sources.map(source => <li><a href={source.url}>{source.title}</a></li>)}</ul></article></section>)}
+  <section class="prose" style="margin-top: 45px"><h2>Maintenance and feedback</h2><p>This draft was prepared for the ICpEP.SE CIT-U chapter's Research and Development Committee. Report unclear steps and find editable source at <a href={site.repository}>{site.repository}</a>. Never put private student records or access tokens in public feedback.</p></section>
+</Base>

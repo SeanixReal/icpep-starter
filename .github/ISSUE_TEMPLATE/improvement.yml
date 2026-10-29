@@ -1,0 +1,21 @@
+name: Suggest an improvement
+description: Propose a content, usability, accessibility, or website improvement.
+title: "[Idea]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What student problem should we solve?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What should a student be able to do afterward?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: References or examples
+      description: Use official sources for technical recommendations. Do not include private student records.

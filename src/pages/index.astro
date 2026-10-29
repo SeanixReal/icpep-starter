@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { getCollection } from 'astro:content';
+import { site, url } from '../lib/site';
+const guides = (await getCollection('guides')).filter(g => g.data.category === 'setup').sort((a, b) => a.data.order - b.data.order);
+const resources = [
+  { title: 'Hit a roadblock?', text: 'Find a fix for PATH errors, missing compilers, and other first-run surprises.', path: 'troubleshooting/', icon: 'help' },
+  { title: 'What comes next?', text: 'Build your confidence with a small, practical learning roadmap.', path: 'roadmap/', icon: 'book' },
+  { title: 'Take it with you.', text: 'Get the complete guide and sample programs for your own reference.', path: 'downloads/', icon: 'download' },
+];
+---
+<Base title="Overview" active="home">
+  <section class="hero" aria-labelledby="welcome-title">
+    <div>
+      <h1 id="welcome-title">Set up.<span>Start coding.</span></h1>
+      <p class="hero-lead">Your first semester comes with enough new things. Let’s get your laptop ready, one small step at a time.</p>
+      <div class="hero-actions"><a class="button" href={url('guides/readiness/')} data-continue data-guide-base={url('guides/')}>Start your setup <Icon name="arrow" size={17} /></a><a class="text-link" href={url('downloads/')}><Icon name="download" size={15} />Get the guide</a></div>
+      <div class="hero-tags"><span>Made for beginner CpE students</span><span>Windows first</span><span>Free tools</span></div>
+    </div>
+    <div class="first-program" aria-label="Example of a first Python program and its expected output">
+      <div class="terminal-label"><span>hello.py</span><span class="terminal-dots" aria-hidden="true"><i></i><i></i><i></i></span></div>
+      <pre class="terminal-code"><code><span class="syntax-fn">print</span>(<span class="syntax-string">"Hello, CpE!"</span>)
+<span class="syntax-fn">print</span>(<span class="syntax-string">"Your next chapter starts here."</span>)</code></pre>
+      <div class="terminal-result"><span><Icon name="check" size={12} />Expected output</span><code>Hello, CpE!<br />Your next chapter starts here.</code></div>
+    </div>
+  </section>
+  <div class="setup-grid">
+    <section aria-labelledby="path-title">
+      <div class="section-heading"><h2 id="path-title">Your setup path</h2><span>Six steps. Your own pace.</span></div>
+      <ol class="path-list">{guides.map((guide, index) => <li><a class="path-row" href={url(`guides/${guide.id}/`)} data-path-guide={guide.id}>
+        <span class="path-index" data-path-index>{String(index + 1).padStart(2, '0')}</span>
+        <span><span class="path-title">{guide.data.title}</span><span class="path-description">{guide.data.description}</span></span>
+        <span class="path-time" data-path-time data-duration={guide.data.duration}>{guide.data.duration}</span><Icon name="arrow" size={15} />
+      </a></li>)}</ol>
+    </section>
+    <aside class="field-notes" aria-label="Setup notes">
+      <div class="progress-note" data-progress-panel hidden>
+        <h3>A little progress, every step.</h3>
+        <p class="progress-count" data-progress-count>0 of 6 guides marked complete</p>
+        <progress max="6" value="0" aria-label="Guides marked complete"></progress>
+        <p data-storage-note>Saved only in this browser. Your checkmarks are a personal reminder, not a setup test.</p>
+        <button class="reset-progress" type="button" data-reset-progress hidden>Reset my progress</button>
+      </div>
+      <div class="quick-note"><h3>Before you install anything</h3><p>Check your device, your available space, and whether you can install software. Using a shared laptop? Ask its owner first.</p><a class="text-link" href={url('guides/readiness/')}>Open the checklist <Icon name="arrow" size={14} /></a></div>
+      <div class="quick-note"><h3>On a Mac?</h3><p>Your path looks a little different. Start with the macOS notes before following Windows commands.</p><a class="text-link" href={url('guides/macos/')}>Read the Mac notes <Icon name="arrow" size={14} /></a></div>
+    </aside>
+  </div>
+  <section class="explore-section" aria-labelledby="explore-title"><div class="section-heading"><h2 id="explore-title">A little help along the way</h2></div><div class="resource-grid">{resources.map(resource => <a class="resource-link" href={url(resource.path)}><Icon name={resource.icon} size={23} /><h3>{resource.title}<Icon name="arrow" size={14} /></h3><p>{resource.text}</p></a>)}</div></section>
+  <section class="community-strip" aria-labelledby="community-title"><img src={url('brand/chapter-header.png')} alt="ICpEP.SE CIT-U: Unlocking Potential, One Bit at a Time. 7th Administration, AY 2026–2027." width="960" height="355" loading="lazy" /><div><h3 id="community-title">From your CpE community, for your first steps.</h3><p>An RDC project, made to grow with every student who finds a clearer way to explain something. Spotted a confusing step? Your contribution belongs here.</p><a class="text-link" href={`${site.repository}/blob/main/CONTRIBUTING.md`}>Help make it better <Icon name="external" size={13} /></a></div></section>
+</Base>

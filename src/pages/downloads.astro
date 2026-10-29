@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { url } from '../lib/site';
+const official = [
+  { name: 'Visual Studio Code', domain: 'code.visualstudio.com', href: 'https://code.visualstudio.com/download' },
+  { name: 'MSYS2 · proposed Windows compiler path', domain: 'msys2.org', href: 'https://www.msys2.org/' },
+  { name: 'Python for Windows', domain: 'python.org', href: 'https://www.python.org/downloads/windows/' },
+  { name: 'Git for Windows', domain: 'git-scm.com', href: 'https://git-scm.com/install/windows' },
+  { name: 'GitHub', domain: 'github.com', href: 'https://github.com/' },
+];
+---
+<Base title="Downloads" active="downloads">
+  <header class="page-heading"><h1>Keep a copy.<br />Keep going.</h1><p>Save the guide for reference, or grab the small programs used in the verification steps. All materials are part of the V1 review draft.</p></header>
+  <div class="downloads-list">
+    <section class="download-row"><div><h2>The complete setup guide</h2><p>All seven guides in one editable Markdown file, including source links and a readiness checklist. Read it in VS Code or another Markdown reader.</p><small>Markdown · generated from the same guide content as this website</small></div><a class="button" href={url('downloads/starter-guide.md')} download><Icon name="download" size={16} />Download guide</a></section>
+    <section class="download-row"><div><h2>A copy for printing</h2><p>A clean reading view of the complete guide. Use your browser's print dialog and select “Save as PDF” if you need a PDF copy.</p><small>Print view · no separate account or PDF service required</small></div><a class="button secondary" href={url('print/')}><Icon name="print" size={16} />Open print view</a></section>
+    <section class="download-row"><div><h2>Verification programs</h2><p>Three source files and a short README. Extract the ZIP into your practice folder, then follow the verification guide to compile and run them.</p><small>ZIP · source only · hello.c, hello.cpp, hello.py, README.txt</small></div><a class="button" href={url('downloads/verification-programs.zip')} download><Icon name="download" size={16} />Download programs</a></section>
+    <section class="download-row"><div><h2>Just one source file?</h2><p><a href={url('downloads/hello.c')} download>hello.c</a> · <a href={url('downloads/hello.cpp')} download>hello.cpp</a> · <a href={url('downloads/hello.py')} download>hello.py</a> · <a href={url('downloads/README.txt')} download>Instructions</a></p><small>Save the exact filename. These are plain-text source files, not installers.</small></div><a class="text-link" href={url('guides/verify/')}>See the commands <Icon name="arrow" size={15} /></a></section>
+  </div>
+  <section class="official-links" aria-labelledby="official-title"><h2 id="official-title">Get your tools from the source.</h2><p class="muted" style="font-size: 12px; margin-top: 10px">Use official downloads. Confirm your device architecture and read the relevant setup guide before choosing an installer.</p>{official.map(tool => <a class="official-link-row" href={tool.href}><span>{tool.name}<br /><small>{tool.domain}</small></span><Icon name="external" size={16} /></a>)}</section>
+  <div class="inline-notice">Tool versions and the MSYS2 UCRT64 / Python 3.14 candidate environment still need faculty confirmation. A working download link is not an approval of every installer offered on that page.</div>
+</Base>
