@@ -15,13 +15,13 @@ flowchart LR
     Downloads --> Astro
     Astro --> HTML[HTML, assets, and search index]
     HTML --> Checks[Local link and anchor checks]
-    Checks --> Host[Vercel static hosting: review draft]
+    Checks --> Host[Vercel static hosting: toolkit]
     Checks -. Manual alternative .-> Pages[GitHub Pages]
     Host --> Reader[Student browser]
     Reader <--> Local[Optional local storage]
 ```
 
-Vercel hosts the review draft at the site root. The connected GitHub repository can trigger production builds from `main` and preview builds from other branches. `vercel.json` runs type/content checks, tests, and the static build before publication. CLI deployments use the same configuration. The manually dispatched GitHub Pages workflow remains an alternative. Hosting does not change the proposed status of the instructional content.
+Vercel hosts the toolkit at the site root. The connected GitHub repository can trigger production builds from `main` and preview builds from other branches. `vercel.json` runs type/content checks, tests, and the static build before publication. CLI deployments use the same configuration. The manually dispatched GitHub Pages workflow remains an alternative. Hosting does not change the proposed status of the instructional content.
 
 ## Source map
 
@@ -29,7 +29,7 @@ Vercel hosts the review draft at the site root. The connected GitHub repository 
 | --- | --- |
 | `src/content/guides/` | Editable instructional Markdown and official references |
 | `src/content.config.ts` | Required frontmatter schema and content loader |
-| `src/layouts/Base.astro` | Shared shell, draft notice, search dialog, metadata, and fonts |
+| `src/layouts/Base.astro` | Shared shell, review notice, search dialog, metadata, and fonts |
 | `src/components/` | Navigation and small consistent SVG icons |
 | `src/pages/` | Static routes, rendered guides, print view, and search index endpoint |
 | `src/styles/global.css` | Shared tokens, responsive layout, focus, and print styles |
@@ -71,6 +71,8 @@ sequenceDiagram
 Storage keys are `cpe-toolkit:progress:v1` and `cpe-toolkit:readiness:v1`. Only checkmark identifiers are stored. Corrupt progress is discarded, unknown guide identifiers are ignored, and unavailable storage must not stop reading. Storage events refresh progress across tabs. A site-origin change will naturally give the new site a separate storage area.
 
 Search uses text content and DOM `textContent` when rendering results. It does not interpret a search query as HTML. Code copying reports permission failure and leaves manual selection available. The mobile navigation preserves a non-JavaScript fallback and traps keyboard focus while expanded.
+
+Guide completion uses the button label alone. Readiness checkboxes have one label each; their live status appears after interaction with a count and a storage warning only when needed. These copy changes do not alter storage keys, completion semantics, or the no-JavaScript reading path. Guide frontmatter uses the typed `proposed` status.
 
 ## Portability and migration
 

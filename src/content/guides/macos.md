@@ -5,15 +5,15 @@ order: 7
 category: reference
 duration: 10 min read
 reviewed: '2026-10-29'
-status: draft
+status: proposed
 sources:
-  - title: Apple — Install command line developer tools
+  - title: "Apple: Install command line developer tools"
     url: https://developer.apple.com/documentation/xcode/installing-the-command-line-tools
-  - title: Microsoft — VS Code on macOS
+  - title: "Microsoft: VS Code on macOS"
     url: https://code.visualstudio.com/docs/setup/mac
-  - title: Python — Using Python on a Mac
+  - title: "Python: Using Python on a Mac"
     url: https://docs.python.org/3/using/mac.html
-  - title: Git — Installing Git
+  - title: "Git: Installing Git"
     url: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
 ---
 

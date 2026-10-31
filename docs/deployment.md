@@ -1,6 +1,6 @@
 # Deployment and repository sharing
 
-Sharing and hosting this toolkit are separate from faculty approval or a completed student pilot. The Vercel deployment is a **V1 review draft**. Keep the draft banner and proposed-tool wording until the review records support changing them.
+Sharing and hosting this toolkit are separate from faculty approval or a completed student pilot. The Vercel deployment is a **V1 toolkit**. Keep the status banner and proposed-tool wording until the review records support changing them.
 
 ## Vercel (current host)
 
@@ -20,7 +20,7 @@ Use an installed Vercel CLI; on PowerShell, `vercel.cmd` is available if the `.p
 
 The CLI can create `.vercel/` project metadata and a local `.env.local` containing an OIDC token. Both stay ignored. Do not commit or share them. `.vercelignore` also excludes environment files, local captures, caches, and generated output from source uploads. Vercel builds the downloads from their canonical source files.
 
-After deployment, verify the returned production URL, `/guides/readiness/`, `/search.json`, the downloads, and an unknown route (HTTP 404). Check a guide without its trailing slash redirects to the slash route. Confirm the draft banner and `noindex, nofollow` remain present. A public production URL is readable by anyone; the indexing hint is not access control. Record the actual URL and results in [verification.md](verification.md).
+After deployment, verify the returned production URL, `/guides/readiness/`, `/search.json`, the downloads, and an unknown route (HTTP 404). Check a guide without its trailing slash redirects to the slash route. Confirm the status banner and `noindex, nofollow` remain present. A public production URL is readable by anyone; the indexing hint is not access control. Record the actual URL and results in [verification.md](verification.md).
 
 For a rollback, inspect the project's deployment history and use `vercel rollback <known-good-deployment-url>` for the same project. Revert the source change too so the next Git deployment does not reintroduce it. Check the CLI help before an incident because rollback eligibility depends on the project's current Vercel settings.
 
@@ -28,13 +28,13 @@ For a rollback, inspect the project's deployment history and use `vercel rollbac
 
 1. Complete and record the required technical, accessibility, and pilot reviews.
 2. Open repository **Settings → Pages** and choose **GitHub Actions** as the publishing source.
-3. In **Actions**, select **Deploy review draft to Pages**, then **Run workflow** on the reviewed `main` commit.
+3. In **Actions**, select **Deploy toolkit to Pages**, then **Run workflow** on the reviewed `main` commit.
 4. Review the successful deployment job and its actual URL. Do not assume a generated URL is live before the workflow succeeds.
 5. Record URL, commit, date, permissions, and known limitations in the club's maintenance record.
 
 The workflow builds with the repository's name as `SITE_BASE` and the repository owner's GitHub Pages origin as `SITE_URL`. No personal token is required. Its build job can read Pages configuration; `pages: write` and `id-token: write` are scoped to the deployment job. The normal CI workflow has read-only repository permissions.
 
-The draft includes `noindex, nofollow`. This is a search-engine hint, not an access control. A public repository and public Pages URL are readable by anyone. Keep proposed instructions visibly labeled until the review process supports a public release.
+The toolkit includes `noindex, nofollow`. This is a search-engine hint, not an access control. A public repository and public Pages URL are readable by anyone. Keep proposed instructions visibly labeled until the review process supports a public release.
 
 ## Another static host
 

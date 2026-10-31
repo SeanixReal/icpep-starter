@@ -1,8 +1,8 @@
 # Technical review status
 
-**Status: proposed implementation draft.** Recorded October 29, 2026. No faculty-approved tool matrix or student pilot evidence has been supplied. Repository checks do not change these statuses.
+**Status: proposed implementation.** Recorded October 29, 2026. No faculty-approved tool matrix or student pilot evidence has been supplied. Repository checks do not change these statuses.
 
-| Decision | Draft candidate | Approval / device status |
+| Decision | Proposed candidate | Approval / device status |
 | --- | --- | --- |
 | Main platform | Windows 11, x64 | Pending department confirmation and device tests |
 | C/C++ toolchain | MSYS2 UCRT64 GCC | Pending faculty confirmation; exact version unrecorded |
@@ -12,7 +12,7 @@
 | Device minimums | Refer to official tool requirements | Department minimums pending |
 | macOS | Brief notes using Apple tools and official Python | Pending separate review; no success rate claimed |
 | Linux | Outside proposed V1 scope | Confirm during faculty review |
-| Hosting | [Vercel review draft](https://icpep-starter.vercel.app); manual Pages alternative | Owner-requested Vercel deployment verified October 31, 2026; reviewed student release pending |
+| Hosting | [Vercel toolkit](https://icpep-starter.vercel.app); manual Pages alternative | Owner-requested Vercel deployment verified October 31, 2026; reviewed student release pending |
 | Feedback | Public GitHub issues | No external student-data form configured |
 
 ## Before calling the toolkit technically reviewed
@@ -26,6 +26,6 @@
 - [ ] Run a beginner pilot and revise unclear steps; see [pilot-testing.md](pilot-testing.md).
 - [ ] Recheck keyboard use, narrow layouts, contrast, links, downloads, print output, and storage-disabled behavior.
 - [ ] Record the approved hosting URL, HTTPS behavior, permissions, release date, and maintainer access.
-- [ ] Review public copy before changing the draft label or removing `noindex`.
+- [ ] Review public copy before labeling recommendations approved or removing `noindex`.
 
 No box above should be checked merely because code was generated or a build passed.

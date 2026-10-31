@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Delegated by the project owner on October 29, 2026. Astro, TypeScript, and Markdown, built as a static site. Small browser scripts provide local progress, search, and copy controls. Node.js 24 and npm support cross-platform contribution. GitHub is the source-sharing destination. On October 31, 2026, the owner requested public review-draft hosting through the Vercel CLI. The live draft uses Vercel static hosting with the connected GitHub repository; the manual GitHub Pages workflow remains an alternative. Faculty approval and the student pilot remain pending.
+Delegated by the project owner on October 29, 2026. Astro, TypeScript, and Markdown, built as a static site. Small browser scripts provide local progress, search, and copy controls. Node.js 24 and npm support cross-platform contribution. GitHub is the source-sharing destination. On October 31, 2026, the owner requested public review hosting through the Vercel CLI. The live toolkit uses Vercel static hosting with the connected GitHub repository; the manual GitHub Pages workflow remains an alternative. Faculty approval and the student pilot remain pending.
 
 ## Users
 
@@ -20,16 +20,18 @@ Help a beginner prepare a programming environment independently, then verify C/C
 
 ## Operating Context
 
-The source is the CpE Starter Toolkit implementation proposal for AY 2026-2027, supplied by the project owner. All recommendations are still proposed. Windows is the primary draft path; macOS receives brief notes; Linux is outside the proposed V1 support scope. A future CpE Digital Hub migration is proposed.
+The source is the CpE Starter Toolkit implementation proposal for AY 2026-2027, supplied by the project owner. All recommendations are still proposed. Windows is the primary setup path; macOS receives brief notes; Linux is outside the proposed V1 support scope. A future CpE Digital Hub migration is proposed.
 
 ## Capabilities and Constraints
 
-- A working V1 draft is authorized, followed by a GitHub push so the owner can share the repository.
+- A working V1 is authorized, followed by a GitHub push so the owner can share the repository.
 - Official tool links, readiness checklist, C/C++ and Python guides and sample programs, Git/GitHub setup, troubleshooting, roadmap, and a downloadable guide.
 - Proposed software choices must be visibly awaiting department/faculty verification. Do not invent approved versions, tested devices, pilot outcomes, or institutional endorsement.
 - Implementation decisions are delegated. Initial additions: on-device progress, guide search, copyable commands, print-friendly guide, contribution documentation, and GitHub templates.
-- No student account, server database, analytics, or submitted student data is needed for this draft. Feedback uses repository issues.
-- The review draft may be shared through its Vercel URL. A faculty-reviewed student release, approved tool matrix, and Windows/macOS device testing are still outstanding.
+- No student account, server database, analytics, or submitted student data is needed for this toolkit. Feedback uses repository issues.
+- The toolkit may be shared through its Vercel URL. A faculty-reviewed student release, approved tool matrix, and Windows/macOS device testing are still outstanding.
+- Use V1 toolkit naming and plain punctuation. Do not use em dashes in interface copy or documentation. Software recommendations remain proposed until review evidence is recorded.
+- Keep control copy concise. Omit obvious subdescriptions and repeated explanations of checkmarks; retain useful privacy, setup, and error details.
 
 ## Brand Commitments
 
@@ -44,7 +46,7 @@ Name: CpE Starter Toolkit. Chapter: ICpEP.SE, CIT-U. Use the supplied blue brand
 ## Product Principles
 
 1. Explain each step in a beginner's vocabulary and identify the terminal it uses.
-2. Separate a working draft from a technically approved release.
+2. Separate a working toolkit from a technically approved release.
 3. Keep content editable in Markdown and decisions documented for club turnover.
 4. Preserve useful reading and navigation when scripts or storage are unavailable.
 5. Collect no student data by default.

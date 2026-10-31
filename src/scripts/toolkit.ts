@@ -100,8 +100,11 @@ checks.forEach(input => {
   input.addEventListener('change', () => {
     readiness = checks.filter(check => check.checked).map(check => check.id);
     writeStorage('cpe-toolkit:readiness:v1', JSON.stringify(readiness));
-    const status = document.querySelector('[data-checklist-status]');
-    if (status) status.textContent = `${checks.filter(check => check.checked).length} of ${checks.length} checked. ${storageAvailable ? 'Saved only in this browser.' : 'Storage is unavailable; checkmarks may reset when you leave.'}`;
+    const status = document.querySelector<HTMLParagraphElement>('[data-checklist-status]');
+    if (status) {
+      status.textContent = `${checks.filter(check => check.checked).length} of ${checks.length} checked.${storageAvailable ? '' : ' Storage is unavailable; checkmarks may reset when you leave.'}`;
+      status.hidden = false;
+    }
   });
 });
 updateProgress();

@@ -5,13 +5,13 @@ order: 2
 category: setup
 duration: 10–15 min
 reviewed: '2026-10-29'
-status: draft
+status: proposed
 sources:
-  - title: Microsoft — VS Code on Windows
+  - title: "Microsoft: VS Code on Windows"
     url: https://code.visualstudio.com/docs/setup/windows
-  - title: Microsoft — VS Code extension marketplace
+  - title: "Microsoft: VS Code extension marketplace"
     url: https://code.visualstudio.com/docs/configure/extensions/extension-marketplace
-  - title: Microsoft — Integrated terminal
+  - title: "Microsoft: Integrated terminal"
     url: https://code.visualstudio.com/docs/terminal/basics
 ---
 
@@ -24,7 +24,7 @@ VS Code is the place you will edit your programs and read terminal output. The c
 3. Run the installer and read the options. If offered, enable **Add to PATH** so a new terminal can find the `code` command. Keep the remaining defaults unless your course or IT team says otherwise.
 4. Finish installation. Close old terminals and open VS Code from the Start menu.
 
-The installer version used for the eventual student release must be recorded during faculty review. This draft does not claim a verified editor version.
+The installer version used for the eventual student release must be recorded during faculty review. This toolkit does not claim a verified editor version.
 
 ## Open your practice folder
 

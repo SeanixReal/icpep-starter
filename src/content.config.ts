@@ -11,7 +11,7 @@ const guides = defineCollection({
     category: z.enum(['setup', 'reference']),
     duration: z.string(),
     reviewed: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
-    status: z.literal('draft'),
+    status: z.literal('proposed'),
     sources: z.array(z.object({ title: z.string(), url: z.url() })).min(1),
   }),
 });
