@@ -15,12 +15,13 @@ flowchart LR
     Downloads --> Astro
     Astro --> HTML[HTML, assets, and search index]
     HTML --> Checks[Local link and anchor checks]
-    Checks --> Host[Approved static hosting]
+    Checks --> Host[Vercel static hosting: review draft]
+    Checks -. Manual alternative .-> Pages[GitHub Pages]
     Host --> Reader[Student browser]
     Reader <--> Local[Optional local storage]
 ```
 
-The hosting node describes a supported deployment path, not a claim that public hosting has been approved or activated.
+Vercel hosts the review draft at the site root. The connected GitHub repository can trigger production builds from `main` and preview builds from other branches. `vercel.json` runs type/content checks, tests, and the static build before publication. CLI deployments use the same configuration. The manually dispatched GitHub Pages workflow remains an alternative. Hosting does not change the proposed status of the instructional content.
 
 ## Source map
 
@@ -38,6 +39,7 @@ The hosting node describes a supported deployment path, not a claim that public 
 | `public/downloads/` | Canonical sample sources; generated Markdown and ZIP are ignored |
 | `scripts/` | Portable download preparation, Markdown base-path rewriting, build checks |
 | `tests/` | Meaningful progress, content, search, download, and path regressions |
+| `vercel.json`, `.vercelignore` | Checked static deployment and upload exclusions; account-specific `.vercel/` metadata is ignored |
 
 ## Routes
 
@@ -73,6 +75,8 @@ Search uses text content and DOM `textContent` when rendering results. It does n
 ## Portability and migration
 
 `url()` uses Astro's configured base URL. The Markdown rehype plugin prefixes internal guide links during build. Both layers are needed for repository hosting at `/icpep-starter/` and future migration into a Digital Hub subpath. An automated build check validates local targets and anchors after compilation.
+
+`SITE_URL` explicitly sets the site origin. Otherwise a Vercel build uses `VERCEL_PROJECT_PRODUCTION_URL` with HTTPS; non-Vercel builds fall back to the GitHub Pages origin. `SITE_BASE` defaults to `/`, so Vercel serves the guide routes, search index, and downloads from the root. Trailing-slash routing follows Astro's directory output, while file URLs retain their extensions. No adapter or server runtime is required.
 
 Astro 7 uses the separately installed `@astrojs/markdown-remark` compatibility processor for this rehype plugin. Do not remove it without replacing and testing base-path rewriting.
 

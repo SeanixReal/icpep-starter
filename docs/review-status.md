@@ -12,7 +12,7 @@
 | Device minimums | Refer to official tool requirements | Department minimums pending |
 | macOS | Brief notes using Apple tools and official Python | Pending separate review; no success rate claimed |
 | Linux | Outside proposed V1 scope | Confirm during faculty review |
-| Hosting | Manual GitHub Pages workflow prepared | Hosting approval and activation pending |
+| Hosting | [Vercel review draft](https://icpep-starter.vercel.app); manual Pages alternative | Owner-requested Vercel deployment verified October 31, 2026; reviewed student release pending |
 | Feedback | Public GitHub issues | No external student-data form configured |
 
 ## Before calling the toolkit technically reviewed

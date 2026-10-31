@@ -1,5 +1,17 @@
 # Changelog
 
+## Unreleased - 2026-10-31
+
+### Added
+
+- Vercel static hosting configuration, CLI deployment instructions, and deployment checks before publication.
+- Deployment upload exclusions for local credentials, project metadata, generated output, and local review artifacts.
+
+### Changed
+
+- Pin the build runtime to Node.js 24 and use Vercel's production domain when `SITE_URL` is not provided.
+- Document Vercel hosting and automatic deployments from the connected GitHub repository while preserving the V1 review-draft status.
+
 ## 0.1.0 - 2026-10-29
 
 First V1 implementation draft for club review and contribution.

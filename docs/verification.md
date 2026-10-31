@@ -25,6 +25,20 @@ Recorded October 29, 2026 for the initial v0.1.0 draft. This record covers repos
 
 Screenshots are local development evidence under `.impeccable/review/` and are intentionally ignored. Do not commit screenshots containing personal information. Source references and architecture are retained in this repository.
 
+## Vercel deployment verification — October 31, 2026
+
+The owner requested deployment using the Vercel CLI. CLI 59.16.0 created and linked `seans-projects-e233560c/icpep-starter`, connected the GitHub repository, and deployed the checked working checkout using `vercel deploy --prod --yes --scope seans-projects-e233560c --logs`.
+
+- Production review URL: [icpep-starter.vercel.app](https://icpep-starter.vercel.app).
+- Initial CLI deployment: `dpl_JBWdrVYNrYVmvvEykCwFDVs8EFjY`, reported `READY` for production; [deployment record](https://vercel.com/seans-projects-e233560c/icpep-starter/JBWdrVYNrYVmvvEykCwFDVs8EFjY).
+- Local checks and the remote Vercel build passed `npm run check`, all 7 tests, and `npm run build`. Local link validation checked 14 pages, 405 local targets, and 11 search entries.
+- Unauthenticated HTTPS requests checked 40 deployed files: all 13 regular HTML pages plus their compiled assets, fonts, supplied brand images, search index, and download files. Served bytes matched the checked local build. ZIP entry names and source contents matched; archive timestamps vary between builds, so ZIP container bytes are not deterministic.
+- An unknown route returned HTTP 404 with the toolkit's custom page. `/guides/readiness` returned HTTP 308 to `/guides/readiness/`.
+- The home page retained the V1 draft banner and `noindex, nofollow`. The static search index returned 11 entries.
+- A CLI dry run confirmed `.env.local`, `.vercel/`, local review captures, installed dependencies, and generated build files were excluded from source uploads. Generated guide/ZIP uploads are also excluded and rebuilt remotely from source.
+
+This validates publication, static file delivery, and routing. Browser interactions were checked in the earlier local run; they were not repeated on Vercel. Faculty approval, clean installation, accessibility review, and pilot testing remain pending. The initial CLI upload preceded the documentation/configuration commit; later Git deployments use the committed configuration.
+
 ## Limits and next checks
 
 - Existing local tools were used to run sample programs. This is not evidence that a beginner can install them from scratch.

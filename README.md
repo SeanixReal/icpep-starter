@@ -57,7 +57,7 @@ Please document new features and update relevant diagrams throughout development
 
 ## Hosting status
 
-The repository is ready to share. Public student launch is still pending review. A **manual** GitHub Pages workflow is included; nothing deploys merely because `main` receives a push. See [deployment instructions](docs/deployment.md). Base paths are configured through `SITE_BASE`, so the site can move into the future CpE Digital Hub without rewriting guide links.
+The V1 review draft is live at **[icpep-starter.vercel.app](https://icpep-starter.vercel.app)**. Faculty approval and the student pilot remain pending. The Vercel project is connected to this repository: `main` can deploy to production and other branches can create previews. Every Vercel build runs the repository checks before publishing static output. A **manual** GitHub Pages workflow remains available as an alternative. See [deployment instructions](docs/deployment.md) for CLI redeployment and maintainer access. Base paths are configured through `SITE_BASE`, so the site can move into the future CpE Digital Hub without rewriting guide links.
 
 ## Project context and credits
 

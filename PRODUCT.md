@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Delegated by the project owner on October 29, 2026. Astro, TypeScript, and Markdown, built as a static site. Small browser scripts provide local progress, search, and copy controls. Node.js 24 and npm support cross-platform contribution. GitHub is the requested source-sharing destination. Hosting is not yet approved; a manual GitHub Pages workflow will be provided.
+Delegated by the project owner on October 29, 2026. Astro, TypeScript, and Markdown, built as a static site. Small browser scripts provide local progress, search, and copy controls. Node.js 24 and npm support cross-platform contribution. GitHub is the source-sharing destination. On October 31, 2026, the owner requested public review-draft hosting through the Vercel CLI. The live draft uses Vercel static hosting with the connected GitHub repository; the manual GitHub Pages workflow remains an alternative. Faculty approval and the student pilot remain pending.
 
 ## Users
 
@@ -29,7 +29,7 @@ The source is the CpE Starter Toolkit implementation proposal for AY 2026-2027, 
 - Proposed software choices must be visibly awaiting department/faculty verification. Do not invent approved versions, tested devices, pilot outcomes, or institutional endorsement.
 - Implementation decisions are delegated. Initial additions: on-device progress, guide search, copyable commands, print-friendly guide, contribution documentation, and GitHub templates.
 - No student account, server database, analytics, or submitted student data is needed for this draft. Feedback uses repository issues.
-- Public launch, a faculty-approved tool matrix, and Windows/macOS device testing are still outstanding.
+- The review draft may be shared through its Vercel URL. A faculty-reviewed student release, approved tool matrix, and Windows/macOS device testing are still outstanding.
 
 ## Brand Commitments
 
