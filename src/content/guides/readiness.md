@@ -5,25 +5,25 @@ order: 1
 category: setup
 duration: 5–10 min
 reviewed: '2026-10-29'
-status: draft
+status: proposed
 sources:
-  - title: Microsoft — Find information about your Windows device
+  - title: "Microsoft: Find information about your Windows device"
     url: https://support.microsoft.com/en-us/windows/experience/find-information-about-your-windows-device
-  - title: VS Code — Hardware and software requirements
+  - title: "VS Code: Hardware and software requirements"
     url: https://code.visualstudio.com/docs/supporting/requirements
-  - title: MSYS2 — Supported Windows versions and hardware
+  - title: "MSYS2: Supported Windows versions and hardware"
     url: https://www.msys2.org/docs/windows_support/
 ---
 
 You do not need to know how to program to use this toolkit. You do need a computer you are allowed to configure and a little time to work through each step.
 
-> **This is a review draft.** The department has not approved this tool combination or its versions. If your instructor specifies another environment, follow the course instructions and tell RDC which steps need to change.
+> **Software choices are proposed.** The department has not approved this tool combination or its versions. If your instructor specifies another environment, follow the course instructions and tell RDC which steps need to change.
 
 ## Know your starting point
 
-This draft uses **Windows 11 on an x64 computer** as its example path. Open **Settings → System → About** and look for your Windows version and system type. An ARM-based Windows device needs a separately reviewed compiler path; do not install an x64 compiler just because it appears in this guide.
+This toolkit uses **Windows 11 on an x64 computer** as its example path. Open **Settings → System → About** and look for your Windows version and system type. An ARM-based Windows device needs a separately reviewed compiler path; do not install an x64 compiler just because it appears in this guide.
 
-Using macOS? Read the [Mac notes](/guides/macos/) first. Linux instructions are outside this V1 draft.
+Using macOS? Read the [Mac notes](/guides/macos/) first. Linux instructions are outside V1.
 
 Exact department minimums for RAM, storage, and supported Windows releases are still pending. The official tool requirements below describe the tools themselves, not a department-approved laptop specification.
 

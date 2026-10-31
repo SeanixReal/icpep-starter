@@ -5,15 +5,15 @@ order: 3
 category: setup
 duration: 20–30 min
 reviewed: '2026-10-29'
-status: draft
+status: proposed
 sources:
-  - title: Microsoft — Using GCC with MinGW in VS Code
+  - title: "Microsoft: Using GCC with MinGW in VS Code"
     url: https://code.visualstudio.com/docs/cpp/config-mingw
-  - title: MSYS2 — Getting started
+  - title: "MSYS2: Getting started"
     url: https://www.msys2.org/
-  - title: MSYS2 — Updating the installation
+  - title: "MSYS2: Updating the installation"
     url: https://www.msys2.org/docs/updating/
-  - title: MSYS2 — Environments
+  - title: "MSYS2: Environments"
     url: https://www.msys2.org/docs/environments/
 ---
 
@@ -23,7 +23,7 @@ An editor stores your source code. A **compiler** turns C or C++ source into an 
 
 ## Install MSYS2
 
-Download the x64 installer from [MSYS2's official site](https://www.msys2.org/) and follow its installation prompts. This draft assumes the usual `C:\msys64` installation folder. If you choose a different location, use that location in the PATH step below.
+Download the x64 installer from [MSYS2's official site](https://www.msys2.org/) and follow its installation prompts. This toolkit assumes the usual `C:\msys64` installation folder. If you choose a different location, use that location in the PATH step below.
 
 Open **MSYS2 UCRT64** from Start. Check the terminal name carefully: MSYS, MINGW64, and UCRT64 are different environments. Package installation commands below belong in **MSYS2 UCRT64**, not PowerShell.
 
@@ -55,7 +55,7 @@ When asked for a package selection, Enter accepts the default selection. Review 
 4. Confirm the dialogs. Keep the existing entries; do not replace the whole PATH value.
 5. Close all VS Code windows and old terminals. Open VS Code again and create a new PowerShell terminal.
 
-Do not add the MSYS2 `usr\bin` folder as a substitute. This draft is using the native Windows UCRT64 tools.
+Do not add the MSYS2 `usr\bin` folder as a substitute. This toolkit is using the native Windows UCRT64 tools.
 
 ## Check the commands
 

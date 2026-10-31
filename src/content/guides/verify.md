@@ -5,15 +5,15 @@ order: 6
 category: setup
 duration: 15–20 min
 reviewed: '2026-10-29'
-status: draft
+status: proposed
 sources:
-  - title: Microsoft — Build and run C++ with GCC
+  - title: "Microsoft: Build and run C++ with GCC"
     url: https://code.visualstudio.com/docs/cpp/config-mingw
-  - title: GCC — Options controlling the output
+  - title: "GCC: Options controlling the output"
     url: https://gcc.gnu.org/onlinedocs/gcc/Overall-Options.html
-  - title: Python — Using the interpreter
+  - title: "Python: Using the interpreter"
     url: https://docs.python.org/3/tutorial/interpreter.html
-  - title: Microsoft — PowerShell command precedence
+  - title: "Microsoft: PowerShell command precedence"
     url: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_command_precedence
 ---
 

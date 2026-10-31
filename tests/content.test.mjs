@@ -25,7 +25,7 @@ test('the six proposed setup guides keep unique order and official source links'
   }));
   assert.deepEqual(guides.filter(g => g.category === 'setup').map(g => g.order).sort(), [1, 2, 3, 4, 5, 6]);
   for (const guide of guides) {
-    assert.equal(guide.status, 'draft');
+    assert.equal(guide.status, 'proposed');
     assert.ok(guide.sources.length > 0);
     for (const source of guide.sources) {
       const url = new URL(source.url);

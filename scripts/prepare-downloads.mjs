@@ -14,7 +14,7 @@ const guides = await Promise.all((await readdir(contentDir)).filter(name => name
 }));
 guides.sort((a, b) => a.order - b.order);
 const repo = 'https://github.com/SeanixReal/icpep-starter';
-const intro = `# CpE Starter Toolkit\n\nVersion 0.1.0 | October 29, 2026 | ICpEP.SE CIT-U Chapter\n\nV1 REVIEW DRAFT. All software recommendations are proposed. Faculty confirmation and Windows pilot testing are pending. Follow your instructor's requirements when they differ.\n\n## Readiness checklist\n\n- [ ] Identify your device architecture and operating system.\n- [ ] Confirm permission and administrator access where required.\n- [ ] Check official storage, software, and internet requirements.\n- [ ] Back up important coursework.\n- [ ] Create a practice folder and enable filename extensions.\n\nCheckmarks are personal reminders, not proof of setup success.\n`;
+const intro = `# CpE Starter Toolkit\n\nVersion 0.1.0 | October 29, 2026 | ICpEP.SE CIT-U Chapter\n\nV1 TOOLKIT. All software recommendations are proposed. Faculty confirmation and Windows pilot testing are pending. Follow your instructor's requirements when they differ.\n\n## Readiness checklist\n\n- [ ] Identify your device architecture and operating system.\n- [ ] Confirm permission and administrator access where required.\n- [ ] Check official storage, software, and internet requirements.\n- [ ] Back up important coursework.\n- [ ] Create a practice folder and enable filename extensions.\n`;
 const sections = guides.map(guide => {
   // Repository URLs remain usable when this file is read offline and later reconnected.
   const body = guide.body.replace(/\]\(\/(guides\/[^)]+|downloads\/|troubleshooting\/(?:#[^)]+)?)\)/g, (_, path) => {

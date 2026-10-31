@@ -12,19 +12,21 @@ order: 8
 category: reference
 duration: 10 min
 reviewed: '2026-10-29'
-status: draft
+status: proposed
 sources:
   - title: Official documentation title
     url: https://docs.python.org/3/
 ---
 ```
 
-The schema validates required fields. `status` currently only permits `draft`; introducing an approved state requires a product decision and recorded evidence. `reviewed` means the official sources were reviewed, not that a device installation was tested or faculty approved the instructions.
+The schema validates required fields. `status` currently only permits `proposed`; introducing an approved state requires a product decision and recorded evidence. `reviewed` means the official sources were reviewed, not that a device installation was tested or faculty approved the instructions.
 
 ## Make steps independently usable
 
 - Start with what the student needs and what they should have at the end.
 - Use second-level headings (`##`) for sections. The page provides its own first-level title.
+- Use V1 toolkit naming and plain punctuation. Use sentences, commas, colons, or parentheses instead of em dashes.
+- Omit helper text that repeats a control's label. Keep details that change a decision, explain a limitation, or help recover from an error.
 - Name the terminal before commands: PowerShell, MSYS2 UCRT64, or macOS Terminal.
 - Keep commands and expected output in separate fenced blocks. Do not include prompt symbols that beginners might copy.
 - Explain placeholders before asking students to run them. Never include real credentials.

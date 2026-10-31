@@ -15,3 +15,5 @@ output/
 .impeccable/*.local.json
 public/downloads/starter-guide.md
 public/downloads/verification-programs.zip
+
+.vercel/

@@ -5,17 +5,17 @@ order: 5
 category: setup
 duration: 15–25 min
 reviewed: '2026-10-29'
-status: draft
+status: proposed
 sources:
-  - title: Git — Official Windows download
+  - title: "Git: Official Windows download"
     url: https://git-scm.com/install/windows
-  - title: Git — First-time Git setup
+  - title: "Git: First-time Git setup"
     url: https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
-  - title: GitHub — Set up Git
+  - title: "GitHub: Set up Git"
     url: https://docs.github.com/en/get-started/git-basics/set-up-git
-  - title: GitHub — Set your commit email address
+  - title: "GitHub: Set your commit email address"
     url: https://docs.github.com/en/account-and-profile/how-tos/email-preferences/setting-your-commit-email-address
-  - title: GitHub — Add locally hosted code
+  - title: "GitHub: Add locally hosted code"
     url: https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github
 ---
 

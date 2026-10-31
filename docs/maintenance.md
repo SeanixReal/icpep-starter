@@ -23,7 +23,8 @@ RDC is the proposed project owner. Review at least once per academic year and wh
 - [ ] Agree on named maintainers and repository ownership. Prefer organization-managed access when the club is ready.
 - [ ] Verify that at least two designated officers can maintain the source and hosting without sharing passwords or tokens.
 - [ ] Preserve the source, lockfile, technical sign-off, approved source assets, and private pilot records in appropriate locations.
-- [ ] Explain how Markdown, download generation, CI, manual deployment, and local progress work.
+- [ ] Explain how Markdown, download generation, CI, Vercel Git/CLI deployment, the manual Pages alternative, and local progress work. See [deployment.md](deployment.md).
+- [ ] Confirm the Vercel project scope, production branch, and maintainer access. Keep `.vercel/` and CLI-created `.env.local` private; officers should authenticate with their own accounts.
 - [ ] Review open issues, dependency updates, platform exclusions, and scheduled academic-year review.
 - [ ] Recheck that no secrets or participant records are in Git history or public artifacts.
 

@@ -34,9 +34,9 @@ const { title, description = 'Set up your programming environment, run your firs
         <button class="search-trigger" type="button" aria-label="Search the toolkit" data-open-search hidden><Icon name="search" size={17} /><span>Find a guide…</span><kbd>/</kbd></button>
         <a class="repo-link" href={site.repository} aria-label="View source on GitHub"><Icon name="github" /><span>GitHub</span></a>
       </header>
-      <div class="draft-banner"><span class="status-dot"></span><span><strong>V1 review draft.</strong> Tool choices and instructions are proposed. <a href={url('about/')}>See what needs review <span aria-hidden="true">↗</span></a></span></div>
+      <div class="status-banner"><span class="status-dot"></span><span><strong>V1 toolkit.</strong> Tool choices and instructions are proposed. <a href={url('about/')}>See what needs review <span aria-hidden="true">↗</span></a></span></div>
       <main id="main" class:list={['main-content', { wide }]} tabindex="-1"><slot /></main>
-      <footer class="site-footer"><span>{site.chapter} <span class="footer-divider">/</span> Research & Development Committee</span><a href={url('about/')}>About this draft <Icon name="arrow" size={14} /></a></footer>
+      <footer class="site-footer"><span>{site.chapter} <span class="footer-divider">/</span> Research & Development Committee</span><a href={url('about/')}>About the toolkit <Icon name="arrow" size={14} /></a></footer>
     </div>
     <dialog class="search-dialog" aria-labelledby="search-title" data-search-url={url('search.json')}>
       <div class="search-dialog-head"><h2 id="search-title">Find your next step</h2><button class="icon-button" type="button" data-close-search aria-label="Close search"><Icon name="close" /></button></div>
@@ -44,7 +44,7 @@ const { title, description = 'Set up your programming environment, run your firs
       <div class="search-field"><Icon name="search" /><input id="guide-search" type="search" placeholder="Try “Python” or “PATH”…" autocomplete="off" /></div>
       <p class="search-status" role="status">Type a word to search the toolkit.</p>
       <ul class="search-results" aria-label="Search results"></ul>
-      <p class="search-hint"><kbd>Esc</kbd> to close <span>Guides are available in the navigation, too.</span></p>
+      <p class="search-hint"><kbd>Esc</kbd> to close</p>
     </dialog>
     <div class="toast" role="status" aria-live="polite"></div>
     <script>import '../scripts/toolkit';</script>

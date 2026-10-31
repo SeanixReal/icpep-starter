@@ -7,7 +7,7 @@ related_targets: ["src/layouts/Base.astro"]
 
 # Toolkit reading surface
 
-Mode: Read. Applies to the home page, guides, roadmap, troubleshooting, and downloads. The owner delegated design choices after an initial interview; no further approval gate is needed for the V1 draft. This session builds directly in code.
+Mode: Read. Applies to the home page, guides, roadmap, troubleshooting, and downloads. The owner delegated design choices after an initial interview; no further approval gate is needed for the V1. This session builds directly in code.
 
 ## Direction contract
 
@@ -15,7 +15,7 @@ Mode: Read. Applies to the home page, guides, roadmap, troubleshooting, and down
 
 **OWN-WORLD:** An engineering field notebook, framed by ICpEP cobalt and a navy chapter rail. White reading paper, thin rules, generous margins, Unbounded headings, Manrope text. Chapter marks are intact; no invented insignia.
 
-**STORY:** Recognize the chapter, understand the draft status, check readiness, follow one guide at a time, verify the results, and report confusing steps through GitHub.
+**STORY:** Recognize the chapter, understand the proposed status, check readiness, follow one guide at a time, verify the results, and report confusing steps through GitHub.
 
 **FIRST VIEWPORT:** A fixed-width blue navigation rail at left; a white masthead with search above the content. At right, a large two-line “Set up. Start coding.” heading, a small self-reported progress summary, then a ruled sequence of six setup steps. The first action opens the readiness checklist. Guide pages replace the sequence with a calm 68ch reading column and an on-page contents margin.
 
@@ -25,4 +25,4 @@ Mode: Read. Applies to the home page, guides, roadmap, troubleshooting, and down
 
 Signature interaction: marking a guide complete updates the numbered setup path and the next-guide action on this device. It is optional and self-reported. No completion data leaves the browser.
 
-Open decisions: faculty-approved tool versions, supported pilot devices, hosting approval, and Digital Hub integration.
+Open decisions: faculty-approved tool versions, supported pilot devices, and Digital Hub integration. Owner-requested Vercel hosting is live. Interface copy uses V1 toolkit naming and plain punctuation without em dashes.

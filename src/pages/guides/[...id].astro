@@ -13,22 +13,22 @@ const { guide, previous, next } = Astro.props;
 const { Content, headings } = await render(guide);
 const contents = headings.filter(heading => heading.depth === 2);
 const readinessChecks = [
-  { id: 'device', title: 'I know my device and Windows version.', detail: 'Open Settings → System → About. This draft targets Windows 11 on an x64 device.' },
-  { id: 'permission', title: 'I have permission to install software.', detail: 'Check with the device owner or school IT. Do not bypass administrator restrictions.' },
-  { id: 'space', title: 'I have internet access and room for the tools.', detail: 'Allow time and space for downloads, a compiler, and updates. Exact department minimums are still pending.' },
-  { id: 'backup', title: 'My important files are backed up.', detail: 'Keep a separate copy of coursework before changing your environment.' },
-  { id: 'folder', title: 'I can create a practice folder.', detail: 'Use a folder you own, such as Documents/cpe-practice. Keep all sample files together.' },
+  { id: 'device', title: 'I know my device and Windows version.' },
+  { id: 'permission', title: 'I have permission to install software.' },
+  { id: 'space', title: 'I have internet access and room for the tools.' },
+  { id: 'backup', title: 'My important files are backed up.' },
+  { id: 'folder', title: 'I can create a practice folder.' },
 ];
 ---
 <Base title={guide.data.title} description={guide.data.description} active={guide.id}>
   <nav class="guide-breadcrumb" aria-label="Breadcrumb"><a href={url()}>Toolkit</a><span aria-hidden="true">/</span><span>{guide.data.category === 'setup' ? `Step ${guide.data.order} of 6` : 'Platform notes'}</span></nav>
-  <header class="guide-heading"><h1>{guide.data.title}</h1><p>{guide.data.description}</p><div class="guide-meta"><span class="draft-label">Proposed guide</span><span>{guide.data.duration} · estimated</span><span>Sources checked {site.reviewed}</span></div></header>
+  <header class="guide-heading"><h1>{guide.data.title}</h1><p>{guide.data.description}</p><div class="guide-meta"><span class="status-label">Proposed guide</span><span>{guide.data.duration} · estimated</span><span>Sources checked {site.reviewed}</span></div></header>
   <details class="guide-contents-mobile"><summary>On this page</summary><ul>{contents.map(heading => <li><a href={`#${heading.slug}`}>{heading.text}</a></li>)}</ul></details>
   <div class="guide-grid"><div>
     <article class="prose"><Content /></article>
-    {guide.id === 'readiness' && <section class="prose" aria-labelledby="readiness-checklist"><h2 id="readiness-checklist">Your readiness checklist</h2><ul class="checklist">{readinessChecks.map(check => <li><label for={check.id}><input type="checkbox" id={check.id} data-readiness-check /><span><strong>{check.title}</strong><span>{check.detail}</span></span></label></li>)}</ul><p class="checklist-note" data-checklist-status aria-live="polite">Checkmarks are optional. With JavaScript enabled, they are saved only in this browser.</p></section>}
-    <section class="guide-sources" aria-labelledby="sources-title"><h2 id="sources-title">Official references</h2><ul>{guide.data.sources.map(source => <li><a href={source.url}>{source.title}</a></li>)}</ul><p>Source review is not faculty approval or a device test. <a href={`${site.repository}/edit/main/src/content/guides/${guide.id}.md`}>Suggest a clearer step on GitHub</a>.</p></section>
-    {guide.data.category === 'setup' && <div class="guide-complete"><button class="button" type="button" data-mark-complete={guide.id} aria-pressed="false" hidden><Icon name="check" size={16} /><span data-complete-label>Mark guide complete</span></button><p>Use this when you have worked through the guide. It is a personal checkmark.</p></div>}
+    {guide.id === 'readiness' && <section class="prose" aria-labelledby="readiness-checklist"><h2 id="readiness-checklist">Your readiness checklist</h2><ul class="checklist">{readinessChecks.map(check => <li><label for={check.id}><input type="checkbox" id={check.id} data-readiness-check /><strong>{check.title}</strong></label></li>)}</ul><noscript><p class="checklist-note">JavaScript is off. Checkmarks may reset when you leave this page.</p></noscript><p class="checklist-note" data-checklist-status aria-live="polite" hidden></p></section>}
+    <section class="guide-sources" aria-labelledby="sources-title"><h2 id="sources-title">Official references</h2><ul>{guide.data.sources.map(source => <li><a href={source.url}>{source.title}</a></li>)}</ul><p><a href={`${site.repository}/edit/main/src/content/guides/${guide.id}.md`}>Suggest a clearer step on GitHub</a></p></section>
+    {guide.data.category === 'setup' && <div class="guide-complete"><button class="button" type="button" data-mark-complete={guide.id} aria-pressed="false" hidden><Icon name="check" size={16} /><span data-complete-label>Mark guide complete</span></button></div>}
     <nav class="guide-pager" aria-label="Previous and next guides">{previous && <a href={url(`guides/${previous.id}/`)}><small>Previous guide</small>{previous.data.title}</a>}{next && <a href={url(`guides/${next.id}/`)}><small>Next guide</small>{next.data.title}</a>}</nav>
   </div><nav class="toc" aria-label="On this page"><strong>On this page</strong><ul>{contents.map(heading => <li><a href={`#${heading.slug}`}>{heading.text}</a></li>)}{guide.id === 'readiness' && <li><a href="#readiness-checklist">Readiness checklist</a></li>}<li><a href="#sources-title">Official references</a></li></ul></nav></div>
 </Base>

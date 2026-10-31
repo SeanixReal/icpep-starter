@@ -2,9 +2,9 @@
 
 **Set up. Start coding.** A beginner-friendly programming setup guide from the ICpEP.SE CIT-U community, led by the Research and Development Committee.
 
-![ICpEP.SE CIT-U — Unlocking Potential, One Bit at a Time. AY 2026–2027.](public/brand/chapter-header.png)
+![ICpEP.SE CIT-U: Unlocking Potential, One Bit at a Time. AY 2026–2027.](public/brand/chapter-header.png)
 
-> **V1 review draft · v0.1.0.** This is an implementation of a proposed toolkit, not a faculty-approved release. MSYS2 UCRT64, Python 3.14, supported device requirements, and instructions still need technical confirmation and Windows pilot testing. [See review status](docs/review-status.md).
+> **V1 toolkit · v0.1.0.** This is an implementation of a proposed toolkit, not a faculty-approved release. MSYS2 UCRT64, Python 3.14, supported device requirements, and instructions still need technical confirmation and Windows pilot testing. [See review status](docs/review-status.md).
 
 ## What is here
 
@@ -57,10 +57,10 @@ Please document new features and update relevant diagrams throughout development
 
 ## Hosting status
 
-The repository is ready to share. Public student launch is still pending review. A **manual** GitHub Pages workflow is included; nothing deploys merely because `main` receives a push. See [deployment instructions](docs/deployment.md). Base paths are configured through `SITE_BASE`, so the site can move into the future CpE Digital Hub without rewriting guide links.
+The V1 toolkit is live at **[icpep-starter.vercel.app](https://icpep-starter.vercel.app)**. Faculty approval and the student pilot remain pending. The Vercel project is connected to this repository: `main` can deploy to production and other branches can create previews. Every Vercel build runs the repository checks before publishing static output. A **manual** GitHub Pages workflow remains available as an alternative. See [deployment instructions](docs/deployment.md) for CLI redeployment and maintainer access. Base paths are configured through `SITE_BASE`, so the site can move into the future CpE Digital Hub without rewriting guide links.
 
 ## Project context and credits
 
 Based on the CpE Starter Toolkit proposal for AY 2026–2027 supplied by the project owner. Proposed scope: Windows first, brief macOS notes, independent student pilot testing, annual review, and later integration into the CpE Digital Hub. The source proposal's goals are not represented as completed outcomes.
 
-The owner supplied the ICpEP.SE chapter logo, administration banner, and brand reference. Original code and original toolkit text use the [MIT license](LICENSE). Institutional marks and third-party assets retain their respective rights; see [asset provenance](docs/assets.md). This draft uses Unbounded and Manrope because the HK Modular font files were not supplied.
+The owner supplied the ICpEP.SE chapter logo, administration banner, and brand reference. Original code and original toolkit text use the [MIT license](LICENSE). Institutional marks and third-party assets retain their respective rights; see [asset provenance](docs/assets.md). This toolkit uses Unbounded and Manrope because the HK Modular font files were not supplied.

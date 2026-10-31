@@ -346,10 +346,10 @@
     {
       "name": "Proposed Guide Tag",
       "kind": "chip",
-      "refersTo": "draft-label",
+      "refersTo": "status-label",
       "description": "Non-interactive review-state tag used beside guide metadata.",
-      "html": "<span class=\"ds-draft-label\">Proposed guide</span>",
-      "css": ".ds-draft-label{padding:2px 8px;border-radius:4px;color:var(--amber,#775015);background:#fff3dc;font-family:var(--body,Manrope,sans-serif);font-size:10px;font-weight:800;line-height:1.7}"
+      "html": "<span class=\"ds-status-label\">Proposed guide</span>",
+      "css": ".ds-status-label{padding:2px 8px;border-radius:4px;color:var(--amber,#775015);background:#fff3dc;font-family:var(--body,Manrope,sans-serif);font-size:10px;font-weight:800;line-height:1.7}"
     },
     {
       "name": "Progress Note",
@@ -416,7 +416,7 @@
       "Do retain the guide reading measure, generous line height, and visible source links.",
       "Do provide a visible keyboard focus treatment and usable navigation without JavaScript.",
       "Do use the existing inline SVG path language for interface icons.",
-      "Do retain the print view's readable code, external URLs, and explicit review-draft status."
+      "Do retain the print view's readable code, external URLs, and explicit review status."
     ],
     "donts": [
       "Don't redraw, recolor, crop, or distort the supplied institutional marks.",

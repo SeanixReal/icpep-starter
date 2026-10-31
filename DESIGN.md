@@ -117,7 +117,7 @@ components:
   nav-link-active:
     backgroundColor: "{colors.paper}"
     textColor: "{colors.rail}"
-  draft-label:
+  status-label:
     backgroundColor: "#fff3dc"
     textColor: "{colors.amber}"
     rounded: "{rounded.sm}"
@@ -167,20 +167,20 @@ Chapter cobalt and navy frame a white reading surface with quiet cool borders an
 
 ### Primary
 
-- **Chapter Cobalt — Blue:** primary actions, text links, sequence numbers, and the emphasized line of the welcome title.
-- **Deep Cobalt — Blue Hover:** primary-action hover state.
+- **Chapter Cobalt: Blue:** primary actions, text links, sequence numbers, and the emphasized line of the welcome title.
+- **Deep Cobalt: Blue Hover:** primary-action hover state.
 - **Sky:** visible keyboard focus and the chapter's light blue accent.
-- **Chapter Rail — Rail:** persistent navigation background and active-item text.
-- **Terminal Navy — Navy:** program example and transient feedback backgrounds.
+- **Chapter Rail: Rail:** persistent navigation background and active-item text.
+- **Terminal Navy: Navy:** program example and transient feedback backgrounds.
 - **Soft Blue:** progress notes, callouts, table headers, and gentle hover feedback.
 
 ### Secondary
 
-- **Completion Green — Green:** personal completion state in navigation and the setup sequence. It does not indicate technical verification.
+- **Completion Green: Green:** personal completion state in navigation and the setup sequence. It does not indicate technical verification.
 
 ### Tertiary
 
-- **Review Amber — Amber:** the proposed-guide tag's text. Its pale amber surface is specific to that component.
+- **Review Amber: Amber:** the proposed-guide tag's text. Its pale amber surface is specific to that component.
 
 ### Neutral
 
@@ -194,6 +194,10 @@ Chapter cobalt and navy frame a white reading surface with quiet cool borders an
 **The Reading Paper Rule.** The reading shell uses Paper. Ground serves the outer canvas and compact search trigger.
 
 ## Typography
+
+Interface copy uses V1 toolkit naming. Keep proposed software choices explicit, and use sentences, commas, colons, or parentheses instead of em dashes.
+
+Controls stand on their labels. Do not add subdescriptions that restate an action or explain obvious checkbox behavior. Use helper text for privacy, compatibility, and actionable recovery. Readiness checkboxes use one concise label; live status reports a count after interaction.
 
 **Display Font:** Unbounded, with sans-serif fallback. The build self-hosts the used medium and semibold weights.
 
@@ -228,7 +232,7 @@ The overview starts with a two-column introduction (1.4fr / 1fr, 44px gap), then
 - **At 960px and narrower:** the introduction and setup sequence become single-column, the terminal example is hidden, and the notes become two columns. Search and repository controls reduce to compact icons.
 - **At 760px and narrower:** side gutters become 22px, the masthead becomes 65px, and main padding becomes 34px 22px 45px. The welcome heading uses a narrow-screen clamp; guide and page headings use their own smaller clamp. Setup durations are hidden, resource links stack, the community strip becomes one column, and guide completion/download controls stack.
 - **Mobile navigation baseline:** without JavaScript, the chapter rail becomes an in-flow, two-column navigation block above the page. With JavaScript, it becomes a fixed drawer up to 300px or 88vw, opened by a labeled button and closed through its button, backdrop, or Escape. Focus remains within the drawer while open.
-- **Print:** the rail, masthead, draft banner, footer, dialogs, on-page contents, completion controls, pager, copy buttons, and toolbar are hidden. Main margins and padding are removed; the guide grid becomes one column. Articles use 10pt text, tables fill the page, code wraps without splitting where possible, and headings avoid stranded page breaks. HTTPS prose links append their URLs. Each guide in the combined print view begins on a new page. The printable page includes its own review-draft statement.
+- **Print:** the rail, masthead, status banner, footer, dialogs, on-page contents, completion controls, pager, copy buttons, and toolbar are hidden. Main margins and padding are removed; the guide grid becomes one column. Articles use 10pt text, tables fill the page, code wraps without splitting where possible, and headings avoid stranded page breaks. HTTPS prose links append their URLs. Each guide in the combined print view begins on a new page. The printable page includes its own review statement.
 
 ## Elevation & Depth
 
@@ -293,7 +297,7 @@ Motion is limited to smooth anchor scrolling, the mobile drawer's transform (220
 - **Do** retain the guide reading measure, generous line height, and visible source links.
 - **Do** provide a visible keyboard focus treatment and usable navigation without JavaScript.
 - **Do** use the existing inline SVG path language for interface icons.
-- **Do** retain the print view's readable code, external URLs, and explicit review-draft status.
+- **Do** retain the print view's readable code, external URLs, and explicit review status.
 
 ### Don't:
 

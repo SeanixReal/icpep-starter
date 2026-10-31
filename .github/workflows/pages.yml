@@ -1,4 +1,4 @@
-name: Deploy review draft to Pages
+name: Deploy toolkit to Pages
 
 on:
   workflow_dispatch:

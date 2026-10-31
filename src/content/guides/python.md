@@ -5,13 +5,13 @@ order: 4
 category: setup
 duration: 10–20 min
 reviewed: '2026-10-29'
-status: draft
+status: proposed
 sources:
-  - title: Python — Using Python on Windows
+  - title: "Python: Using Python on Windows"
     url: https://docs.python.org/3/using/windows.html
-  - title: Python — Downloads for Windows
+  - title: "Python: Downloads for Windows"
     url: https://www.python.org/downloads/windows/
-  - title: Microsoft — Python environments in VS Code
+  - title: "Microsoft: Python environments in VS Code"
     url: https://code.visualstudio.com/docs/python/environments
 ---
 
@@ -25,7 +25,7 @@ Open the [official Windows downloads page](https://www.python.org/downloads/wind
 
 Run the manager installer and follow its prompts. On a managed device, stop and ask IT if installation is blocked. Open a **new PowerShell terminal** after installation so new commands can be discovered.
 
-An existing Python installation may use an older launcher. If you already have Python for a course, do not uninstall it just to match this draft. Check with your instructor first; the troubleshooting page explains how to gather the command information.
+An existing Python installation may use an older launcher. If you already have Python for a course, do not uninstall it just to match this toolkit. Check with your instructor first; the troubleshooting page explains how to gather the command information.
 
 ## Install the proposed runtime
 
