@@ -45,6 +45,8 @@ Copy cleanup on October 31, 2026 uses V1 toolkit naming and the typed `proposed`
 
 The mechanical design detector reported advisory differences between existing style values and the design-system inventory. This copy-only change keeps the existing color and type values. Public-host checks do not establish device compatibility or faculty approval.
 
+PR #3 review identified a missing readiness-persistence notice for browsers with JavaScript disabled. A conditional `noscript` paragraph now explains that checkmarks may reset when leaving the page. The generated HTML includes this fallback independently of the hidden live count. Full JavaScript-disabled browser interaction remains outside the recorded browser checks.
+
 The repository requires a pull request and one approving review for `main`. The owner-requested CLI deployment can publish the checked feature-branch checkout while source changes await that review; the main-branch Git integration remains enabled. Merge the hosting/copy PR before making unrelated production changes, so a later deployment from older source does not restore previous copy.
 
 - Existing local tools were used to run sample programs. This is not evidence that a beginner can install them from scratch.

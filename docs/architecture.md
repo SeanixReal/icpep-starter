@@ -74,6 +74,8 @@ Search uses text content and DOM `textContent` when rendering results. It does n
 
 Guide completion uses the button label alone. Readiness checkboxes have one label each; their live status appears after interaction with a count and a storage warning only when needed. These copy changes do not alter storage keys, completion semantics, or the no-JavaScript reading path. Guide frontmatter uses the typed `proposed` status.
 
+The readiness page includes a static `noscript` notice that checkmarks may reset when JavaScript is disabled. It is separate from the scripted live count, so the persistence limitation remains visible in browsers that cannot run the client script.
+
 ## Portability and migration
 
 `url()` uses Astro's configured base URL. The Markdown rehype plugin prefixes internal guide links during build. Both layers are needed for repository hosting at `/icpep-starter/` and future migration into a Digital Hub subpath. An automated build check validates local targets and anchors after compilation.

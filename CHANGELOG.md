@@ -6,6 +6,7 @@
 
 - Vercel static hosting configuration, CLI deployment instructions, and deployment checks before publication.
 - Deployment upload exclusions for local credentials, project metadata, generated output, and local review artifacts.
+- A readiness persistence notice shown when JavaScript is disabled.
 
 ### Changed
 
